@@ -1,2 +1,2 @@
-# decimal-discriminator
-decimal discriminator(Java)
+# prime number discriminator
+prime number discriminator(Java)
