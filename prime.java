@@ -1,4 +1,4 @@
-class SystemOutPrintln
+class prime
 {
     public static int primeNum = 0;
     public static int[] prime = new int[100000];
@@ -6,14 +6,17 @@ class SystemOutPrintln
     public static void main(String[] args)
     {
 
-        int num = Integer.parseInt(args[0]);
+        int down = Integer.parseInt(args[0]);
+        int up = Integer.parseInt(args[1]);
         prime[primeNum++] = 2;
 
-        if(isPrime(num))
-        {
-            System.out.println(num + "은 소수입니다.");
-        } else {
-            System.out.println(num + "은 소수가 아닙니다.");
+        for(int i = down; i < up + 1; i++){
+            if(isPrime(i))
+            {
+                System.out.println(i + "은 소수입니다.");
+            } else {
+                System.out.println(i + "은 소수가 아닙니다.");
+            }
         }
         
     }
