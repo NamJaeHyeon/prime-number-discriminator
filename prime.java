@@ -1,14 +1,18 @@
-class prime
+class Prime
 {
+    public static final int MAX = 100000;
     public static int primeNum = 0;
-    public static int[] prime = new int[100000];
+    public static int[] prime = new int[MAX];
+
+    static {
+        prime[primeNum++] = 2;
+    }
 
     public static void main(String[] args)
     {
 
         int down = Integer.parseInt(args[0]);
         int up = Integer.parseInt(args[1]);
-        prime[primeNum++] = 2;
 
         for(int i = down; i < up + 1; i++){
             if(isPrime(i))
@@ -18,7 +22,6 @@ class prime
                 System.out.println(i + "은 소수가 아닙니다.");
             }
         }
-        
     }
 
     public static void completePrime()
@@ -35,6 +38,7 @@ class prime
     public static boolean isPrime(int num)
     {
         int k = (int)(Math.sqrt((double)num));
+        if(num < 2) return false;
         while (prime[primeNum - 1] <= k)
         {
             completePrime();
