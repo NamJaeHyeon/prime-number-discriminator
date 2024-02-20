@@ -1,8 +1,11 @@
 # prime number discriminator
-prime number discriminator(Java)
+prime number discriminator(Java)   
+### terminal
 ```
-java prime 128 140
+javac Prime.java
+java Prime 128 140
 ```
+### Output
 ```
 128은 소수가 아닙니다.
 129은 소수가 아닙니다.
