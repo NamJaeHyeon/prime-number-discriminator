@@ -21,7 +21,7 @@ class Prime
         }
     }
 
-    public static void completePrime()
+    public static void fineNextPrime()
     {
         /* 소수 생성 */
         for(int i = prime[primeNum - 1] + 1;;i++){
@@ -42,7 +42,7 @@ class Prime
         while (prime[primeNum - 1] <= k)
         {
             /* 루트(num)보다 작거나 같은 소수들 생성 */
-            completePrime();
+            findNextPrime();
         }
         
         for(int i = 0; prime[i] <= k; i++)
