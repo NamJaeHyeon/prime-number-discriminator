@@ -21,7 +21,7 @@ class Prime
         }
     }
 
-    public static void fineNextPrime()
+    public static void findNextPrime()
     {
         /* 소수 생성 */
         for(int i = prime[primeNum - 1] + 1;;i++){
